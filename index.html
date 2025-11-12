@@ -53,6 +53,29 @@
             letter-spacing: 2px;
         }
 
+        .dedicatoria {
+                font-family: 'Outfit', sans-serif !important;
+                text-align: center;
+                color: #ffffff !important; /* Blanco puro, siempre visible */
+                font-size: 1.15em;
+                margin-top: 5px;
+                margin-bottom: 25px;
+                line-height: 1.5;
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.4),
+                             0 0 20px rgba(255, 192, 203, 0.3);
+            }
+
+            @keyframes glow {
+                0%, 100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.4),
+                            0 0 20px rgba(255, 192, 203, 0.3); }
+                50% { text-shadow: 0 0 15px rgba(255, 255, 255, 0.7),
+                               0 0 30px rgba(255, 182, 193, 0.6); }
+            }
+            
+            .dedicatoria {
+                animation: glow 3s ease-in-out infinite;
+            }
+
         .controls {
             display: flex;
             justify-content: center;
@@ -409,31 +432,7 @@
                 font-size: 12px;
                 padding: 10px;
             }
-
-            .dedicatoria {
-                font-family: 'Outfit', sans-serif !important;
-                text-align: center;
-                color: #ffffff !important; /* Blanco puro, siempre visible */
-                font-size: 1.15em;
-                margin-top: 5px;
-                margin-bottom: 25px;
-                line-height: 1.5;
-                text-shadow: 0 0 10px rgba(255, 255, 255, 0.4),
-                             0 0 20px rgba(255, 192, 203, 0.3);
-            }
-
-            @keyframes glow {
-                0%, 100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.4),
-                            0 0 20px rgba(255, 192, 203, 0.3); }
-                50% { text-shadow: 0 0 15px rgba(255, 255, 255, 0.7),
-                               0 0 30px rgba(255, 182, 193, 0.6); }
-            }
             
-            .dedicatoria {
-                animation: glow 3s ease-in-out infinite;
-            }
-
-
         }
     </style>
 </head>
